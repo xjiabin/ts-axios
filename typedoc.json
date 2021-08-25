@@ -1,0 +1,14 @@
+{
+  "entryPoints": [
+    "src/ts-axios"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "name": "测试 title",
+  "out": "docs",
+  "theme": "minimal",
+  "includeVersion": true,
+  "hideGenerator": true,
+  "disableSources": true
+}
