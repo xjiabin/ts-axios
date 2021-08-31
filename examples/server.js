@@ -31,9 +31,12 @@ router.get('/simple/get', function(req, res) {
   })
 })
 
+router.get('/base/get', function(req, res) {
+  res.json(req.query)
+})
+
 app.use(router)
 
-console.log(process.env)
 const port = process.env.PORT || 8080
 module.exports = app.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}, Ctrl+C to stop`)
