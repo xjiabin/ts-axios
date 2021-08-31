@@ -19,6 +19,7 @@
     "node": ">=6.0.0"
   },
   "scripts": {
+    "dev": "cross-env PORT=8081 node examples/server.js PORT=8081",
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
     "docs": "typedoc --options typedoc.json",
@@ -116,6 +117,13 @@
     "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^8.0.1",
     "typedoc": "^0.21.6",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "webpack": "^4.28.4",
+    "webpack-dev-middleware": "^3.5.0",
+    "webpack-hot-middleware": "^2.24.3",
+    "ts-loader": "^5.3.3",
+    "tslint-loader": "^3.5.4",
+    "express": "^4.16.4",
+    "body-parser": "^1.18.3"
   }
 }
