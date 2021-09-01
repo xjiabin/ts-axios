@@ -61,6 +61,6 @@ export interface Axios {
   patch(url: string, data?: any, config?: AxiosRequestConfig): AxiosPromise
 }
 
-export interface AxiosInterface extends Axios {
+export interface AxiosInstance extends Axios {
   (config: AxiosRequestConfig): AxiosPromise
 }
